@@ -10,7 +10,7 @@ namespace View
 {
     public partial class MainWindow : Window
     {
-        private IPluginSetup _pluginSetup = new DefaultPluginSetup(new MefPluginConnector(Path.GetFullPath("Plugins")));
+        private IPluginSetup _pluginSetup = new DefaultPluginSetup(new PluginConnector(Path.GetFullPath("Plugins")));
 
         private MainVM _mainVM;
 

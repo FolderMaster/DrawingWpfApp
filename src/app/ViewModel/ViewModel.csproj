@@ -9,8 +9,6 @@
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-    <PackageReference Include="System.ComponentModel.Composition" Version="8.0.0" />
-    <PackageReference Include="System.ComponentModel.Composition.Registration" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
