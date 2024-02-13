@@ -6,7 +6,7 @@ using System.Windows.Media.Imaging;
 using ViewModel;
 using ViewModel.Plugin;
 
-namespace View
+namespace View.Windows
 {
     public partial class MainWindow : Window
     {
@@ -21,8 +21,10 @@ namespace View
             _mainVM.Image = CreateImage();
             DataContext = _mainVM;
 
-            var window = new PluginWindow(_pluginSetup);
-            window.Show();
+            var pluginWindow = new PluginWindow(_pluginSetup);
+            pluginWindow.Show();
+            var colorWindow = new ColorPickerWindow();
+            colorWindow.Show();
         }
 
         private BitmapFrame CreateImage()

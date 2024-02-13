@@ -10,20 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using ViewModel;
-using ViewModel.Plugin;
-
-namespace View
+namespace View.Controls
 {
-    public partial class PluginWindow : Window
+    /// <summary>
+    /// Interaction logic for ColorGridControl.xaml
+    /// </summary>
+    public partial class ColorGridControl : UserControl
     {
-        public PluginWindow(IPluginSetup pluginSetup)
+        public ColorGridControl()
         {
             InitializeComponent();
-
-            DataContext = new PluginVM(pluginSetup);
         }
     }
 }
